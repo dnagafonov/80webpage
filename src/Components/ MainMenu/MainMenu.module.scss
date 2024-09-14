@@ -1,3 +1,16 @@
+.logo {
+    transition: all 0.5s;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .mainMenu {
 
     .mainMenuItem {
