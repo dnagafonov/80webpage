@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
 import s from "./MainMenu.module.scss"
 import { useState } from "react"
 
 const MainMenu = () => {
     const [preview, setPreview] = useState(true)
 
-    // const workProgress = "хуйня, завтра сделаю"
+
+
 
     if (preview) {
         return <div className={s.preview} onClick={() => setPreview((prev) => !prev)}>
@@ -13,15 +15,12 @@ const MainMenu = () => {
     }
 
     return (
-        <>
-            <ul className={s.MainMenu}>
-                {/* ROUTES buit */}
-                <li className={s.MainMenu_item}>PROJECTS</li>
-                <li className={s.MainMenu_item}>SHOP</li>
-                <li className={s.MainMenu_item}>CONTACT</li>
-                <li className={s.MainMenu_item}>ABOUT</li>
-            </ul>
-        </>
+        <div className={s.mainMenu}>
+            <Link className={s.mainMenuItem} to={"/projects"}>PROJECTS</Link>
+            <Link className={s.mainMenuItem} to={"/shop"}>SHOP</Link>
+            <Link className={s.mainMenuItem} to={"/contact"}>CONTACT</Link>
+            <Link className={s.mainMenuItem} to={"/about"}>ABOUT</Link>
+        </div>
     )
 }
 
