@@ -18,7 +18,7 @@ const MainMenu = () => {
         onMouseLeave={() => setLogoSrc(logo)}
         onClick={() => {
           setLogoAnimation(true);
-          setTimeout(() => setPreview(false), 500);
+          setTimeout(() => setPreview(false), 100);
         }}
       />
     );

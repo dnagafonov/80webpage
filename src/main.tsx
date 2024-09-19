@@ -9,11 +9,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <ErrorBoundary />
   },
 ]);
 
@@ -23,7 +25,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router}>
-      </RouterProvider>
+      </RouterProvider >
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </StrictMode>,

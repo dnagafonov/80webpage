@@ -1,6 +1,6 @@
 .logo {
     transition: all 0.5s;
-    background: url("../../assets/images/logo262x300.png") no-repeat center center;
+    //background: url("../../assets/images/logo262x300.png") no-repeat center center;
     background-size: contain;
     width: 262px;
     height: 300px;
@@ -8,7 +8,7 @@
     padding: 0;
 
     &:hover {
-        background: url("../../assets/images/logo262x300shadow.png") no-repeat center center; 
+        //background: url("../../assets/images/logo262x300shadow.png") no-repeat center center; 
         background-size: contain; 
     }
 
