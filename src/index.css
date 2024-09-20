@@ -1,6 +1,6 @@
 @font-face {
   font-family: Consolab;
-  src: url("../src/fonts/consolab.ttf");
+  src: url("./assets/fonts/consolab.ttf");
 }
 
 :root {

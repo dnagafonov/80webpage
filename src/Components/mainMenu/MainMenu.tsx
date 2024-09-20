@@ -32,8 +32,8 @@ const MainMenu = () => {
       <Link className={s.mainMenuItem} to={"/shop"}>
         SHOP
       </Link>
-      <Link className={s.mainMenuItem} to={"/contact"}>
-        CONTACT
+      <Link className={s.mainMenuItem} to={"/contacts"}>
+        CONTACTS
       </Link>
       <Link className={s.mainMenuItem} to={"/about"}>
         ABOUT
